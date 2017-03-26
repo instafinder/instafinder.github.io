@@ -15,7 +15,7 @@ window.Instagram = {
      * Get a list of popular media.
      */
     popular: function( callback ) {
-        var endpoint = this.BASE_URL + '/media/popular?client_id=' + this.config.client_id;
+        var endpoint = 'https://api.instagram.com/v1/locations/search?lat=40.741895&lng=-73.989308&access_token=1487568092.a163f17.cf54eb3fa7c74d079b99180f2dba8e2b'
         this.getJSON( endpoint, callback );
     },
 
@@ -71,3 +71,4 @@ Instagram.init({
     });
 
 });*/
+//https://api.instagram.com/oauth/authorize/?client_id=a163f170db514d3e816af2302d8fd72c&redirect_uri=http://instafinder.github.io&response_type=token&scope=public_content
